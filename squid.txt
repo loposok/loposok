@@ -1,0 +1,16 @@
+sudo apt install isc-dhcp-server
+sudo nano /etc/dhcp/dhcpd.conf
+sudo nano /etc/default/isc-dhcp-server
+
+sudo apt install squid
+sudo nano /etc/squid/squid.conf
+control w: acl localnet
+	   acl localnet src 10.0.2.0/24
+acl letiltott dstdomain "/etc/squid/linkek.acl"
+http_access deny letiltott
+control w: http_access deny all -> átírni allow-ra
+sudo nano /etc/squid/linkek.acl
+	.facebook.com
+	.youtube.com
+sudo systemctl restart squid
+sudo systemctl status squid
