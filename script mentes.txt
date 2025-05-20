@@ -1,0 +1,23 @@
+Security save script
+
+mkdir ora
+cd ora
+ls -l
+nano mentes.sh
+
+#/bin/bash
+IDO=$`date +%Y-%m-%d__%H-%M-%S
+NEV=mentes-$IDO.gz
+FORRAS="/home/administrator/ora/fajlok"
+CEL="/home/administrator/ora/mentesek"
+tar -cvzf $CEL/$NEV $FORRAS
+ctrl+x
+y
+
+mkdir fajlok mentesek
+cd fajlok
+touch 1.txt 2.txt 3.txt 4.txt
+cd ..
+chmod a+x mentes.sh
+ls -l
+./mentes.sh
