@@ -1,0 +1,20 @@
+sudo apt update
+sudo apt upgrade
+sudo apt install apache2
+cd /var/www/html
+windows 10->microsoft edge
+ip a
+sudo netplan apply
+sudo apt install samba
+sudo nano /etc/samba/smb.conf
+	[megosztas]
+		path = /home/administrator/mappanév
+		browseable = yes
+		read only = no
+		guest ok = no
+
+sudo smbpasswd -a administrator (új jelszó smb-hez)
+smb service samba restart
+
+vissza fájlkezelő-> ip cím
+
