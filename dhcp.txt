@@ -1,28 +1,33 @@
 sudo apt install isc-dhcp-server
 sudo nano /etc/default/isc-dhcp-server
+    INTERFACESv4 = "enp0s3"
 sudo nano /etc/dhcp/dhcpd.conf
-
-authoritative #-t törölni
-
-subnet 192.168.1.0 netmask 255.255.255.0
-{
-range 192.168.1.21 192.168.1.200;
-option routers 192.168.1.1;
-default-lease-time 3600;
-max-lease-time 7200;
-option domain-name "otthon.local";
-option broadcast-address 192.168.1.255;
-}
-
+    authoritative #-t törölni
+    subnet 192.168.1.0 netmask 255.255.255.0
+    {
+    range 192.168.1.21 192.168.1.200;
+    option routers 192.168.1.1;
+    default-lease-time 3600;
+    max-lease-time 7200;
+    option domain-name "otthon.local";
+    option broadcast-address 192.168.1.255;
+    }
 sudo systemctl restart isc-dhcp-server
 sudo nano /var/lib/dhcp/dhcpd.leases
 sudo nano /etc/dhcp/dhcpd.conf
+    host valami
+    {
+    hardware ethernet mac cím;
+    fixed-address ip cím;
+    }
+sudo systemctl restart isc-dhcp-server
+sudo systemctl status isc-dhcp-server
 
-host valaminév
-{
-hardware ethernet mac cím;
-fixed-address ip cím;
-}
-
+sudo nano /etc/netplan/50-tab
+    enp0s3:
+       addresses: [192.168.1.21/24]     (10 space)
+       gateway4: 192.168.1.1            (10 space)
+       nameservers:                     (10 space)
+         addresses: [192.168.1.50]      (12 space)
 sudo systemctl restart isc-dhcp-server
 sudo systemctl status isc-dhcp-server
