@@ -1,0 +1,18 @@
+-Új txt-t csinálni D meghajtóra
+-txtbe másolni sample html fájlt w3schoolból
+-ezt társítabi visual studio codeval és lementeni html fajlként
+-majd bejelentkezni onedriveba és a csinált html fájlt bemásolni oda
+
+-azureba bejelentkezni és létrehozni erőforrás csoportot. (resource group):create
+-marketplace: virtual machine
+	 create virtual machine:
+		-windows server
+		-connect
+		-rdp fájl letöltése. és belépés virtuális gépbe.
+		 ott onedriveba bejelentkezni és ami a gazdagépbe 
+		 fel lett az imént tölte htam fájl,
+		 letölteni virtual gépre és képet csinálni.
+
+azure újra:
+	word press microsoft create:
+		név megadás és jelszó beálltás:create

@@ -1,0 +1,23 @@
+-létrehozni egy mappát D meghajtóra és abba Winows10, 12őt 
+importálni a virtualboxba
+-ubuntu nat hálózat
+-win10, 12 belső hálózat
+-H meghajtóra feltölteni majd a wordöt a képpekkel együtt
+-a win12őn a vezérlőpult letiltása:
+	beírni vezérlőpultot a fájlkezelőbe és letiltja akkor jó
+-win12: IIS webkiszolgáló telepítése
+	megnyitás->helyek->default website
+
+biztonsági mentés:
+	windows server biztonsági másolat telepítése
+	megnyitni-> eseti biztonsági mentés
+	tallozás: C\userst a mentesekre
+win10, 12 vége
+
+Ubuntu:
+	fájlkezekések:
+		mappa létrehozása: pl doksik, nevek, mentesek
+		doksikban txt lérehozása és beleírni a nevemet.
+		mv doksik/nevem.txt nevek/
+apache2 telepítés:
+sudo systemctl status apache2
