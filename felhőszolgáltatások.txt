@@ -10,7 +10,7 @@
 		-connect
 		-rdp fájl letöltése. és belépés virtuális gépbe.
 		 ott onedriveba bejelentkezni és ami a gazdagépbe 
-		 fel lett az imént tölte htam fájl,
+		 fel lett az imént töltve html fájl,
 		 letölteni virtual gépre és képet csinálni.
 
 azure újra:
