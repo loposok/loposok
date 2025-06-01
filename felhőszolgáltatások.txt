@@ -1,6 +1,6 @@
 -Új txt-t csinálni D meghajtóra
 -txtbe másolni sample html fájlt w3schoolból
--ezt társítabi visual studio codeval és lementeni html fajlként
+-ezt társítabi visual studio codeval és lementeni html fajlként(átirni a txt-t html kitrjesztésre)
 -majd bejelentkezni onedriveba és a csinált html fájlt bemásolni oda
 
 -azureba bejelentkezni és létrehozni erőforrás csoportot. (resource group):create
