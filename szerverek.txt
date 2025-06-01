@@ -27,7 +27,7 @@ touch mentes.sh
 chmod a+x mentes.sh
 nano mentes.sh
 #!/bin/bash
-IDO=$(date :+%H-%M-%S)
+IDO=$(date +%H-%M-%S)
 FAJLNEV=mentes-IDO.tar.gz
 FORRAS="$HOME/nevek"
 CEL="$HOME/mentesek"
