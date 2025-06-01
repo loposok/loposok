@@ -17,7 +17,7 @@ win10, 12 vége
 Ubuntu:
 	fájlkezekések:
 		mappa létrehozása: pl doksik, nevek, mentesek
-		doksikban txt lérehozása és beleírni a nevemet.
+		doksikban a nevem.txt lérehozása és beleírni a nevemet.
 		mv doksik/nevem.txt nevek/
 apache2 telepítés:
 sudo systemctl status apache2
