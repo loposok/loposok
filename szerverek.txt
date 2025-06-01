@@ -4,7 +4,7 @@ importálni a virtualboxba
 -win10, 12 belső hálózat
 -H meghajtóra feltölteni majd a wordöt a képpekkel együtt
 -a win12őn a vezérlőpult letiltása:
-	beírni vezérlőpultot a fájlkezelőbe és letiltja akkor jó
+	beírni vezérlőpultot a keresőbe win10-en és letiltja akkor jó
 -win12: IIS webkiszolgáló telepítése
 	megnyitás->helyek->default website
 
@@ -21,3 +21,14 @@ Ubuntu:
 		mv doksik/nevem.txt nevek/
 apache2 telepítés:
 sudo systemctl status apache2
+
+script biztonsági mentés:
+touch mentes.sh
+chmod a+x mentes.sh
+nano mentes.sh
+#!/bin/bash
+IDO=$(date :+%H-%M-%S)
+FAJLNEV=mentes-IDO.tar.gz
+FORRAS="$HOME/nevek"
+CEL="$HOME/mentesek"
+tar -cvzf $CEL/$FAJLNEV $FORRAS
